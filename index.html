@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<header>
+    <title>
+        House of Pie POS System
+    </title>
+    
+    <link href = "css/style.css" rel = "stylesheet">
+
+</header>
+<body>
+
+    <div>
+        <img src = "Images/pizza.jpg" alt = "Pizza" width = 100% height = 10%>
+    </div>
+
+    <div id = "container">
+        <div class = "left">
+            <label class = "centered">Customer #: 000001</label>
+            <label>Pizza Size</label>
+            <div class = "pizza-size">
+                <input type = "radio" name = "pizza" value = "Small"><label>Small $10</label><br>
+                <input type = "radio" name = "pizza" value = "Medium"><label>Medium $13</label><br>
+                <input type = "radio" name = "pizza" value = "Large"><label>Large $17</label><br>
+                <input type = "radio" name = "pizza" value = "ExtraLarge"><label>ExtraLarge $20</label><br>
+            </div>
+            <br>
+            <br>
+            <br>
+            <label>Extra Toppings</label>
+            <div class = "toppings">
+                <input type = "checkbox" name = "toppings" value = "Pepperoni"><label>Pepperoni - $2</label><br>
+                <input type = "checkbox" name = "toppings" value = "Mushroom"><label>Mushroom - $1.50</label><br>
+                <input type = "checkbox" name = "toppings" value = "ExtraCheese"><label>Extra Cheese - $1</label><br>
+                <input type = "checkbox" name = "toppings" value = "Sausage"><label>Sausage - $2</label><br>
+                <input type = "checkbox" name = "toppings" value = "Onion"><label>Onion - $1.50</label><br>
+                <input type = "checkbox" name = "toppings" value = "BlackOlives"><label>Black Olives - $1.50</label><br>
+                <input type = "checkbox" name = "toppings" value = "GreenPeppers"><label>Green Peppers - $1</label><br>
+                <input type = "checkbox" name = "toppings" value = "FreshGarlic"><label>Fresh Garlic - $2</label><br>
+                <input type = "checkbox" name = "toppings" value = "Tomato"><label>Tomato - $1</label><br>
+                <input type = "checkbox" name = "toppings" value = "FreshBasil"><label>Fresh Basil - $3</label><br>
+            </div>
+        </div>
+
+        <div id = "display" class="display"></div>
+        
+        <div class = "right">
+            <label for = "drink">Drink</label>
+            <select name = "drink" id= "drink" class = "drink-type">
+                <option value = "Coke">Coke</option>
+                <option value = "Pepsi">Pepsi</option>
+                <option value = "Sprite">Sprite</option>
+                <option value = "MountainDew">MountainDew</option>
+                <option value = "Fanta">Fanta</option>
+            </select>
+            <br>
+            <label for ="drink-size">Size</label>
+            <select name = "drink-size" id= "drink-size">
+                <option value = "Small">Small - $1.50</option>
+                <option value = "Medium">Medium - $2</option>
+                <option value = "Large">Large - $2.50</option>
+            </select>
+            <br>
+            <br>
+            <br>
+            <label>Customer Information</label>
+            <label>Name</label>
+            <input type = "text" name = "Name">
+            <label>Address</label>
+            <input type = "text" name = "Address">
+            <label>City and State</label>
+            <input type = "text" name = "CityAndState">
+            <label>Zip</label>
+            <input type = "text" name = "Zip">
+            <label>Phone</label>
+            <input type = "text" name = "Phone">
+
+        </div>
+    </div>
+    <br>
+    <div id = "button">
+        <div></div>
+        <input class = "button-color" type = "button" name = "transaction" value = "Complete transaction">
+        <div></div>
+    <br>
+    </div>
+    <br>
+</body>
