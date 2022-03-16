@@ -5,6 +5,7 @@ completeBtn.addEventListener('click', function(){
 
     let size = document.getElementsByName("pizza");
     let toppings = document.getElementsByName("toppings");
+    let transaction = document.getElementById("transaction");
 
     display.innerText += "Pizza Size: " + " ";
     
@@ -23,5 +24,37 @@ completeBtn.addEventListener('click', function(){
             display.innerText += toppings[i].value + "\n";
         }
     }
+
+    display.innerText += "\n";
+
+    display.innerText += "Drink: ";
+
+    display.innerText += "\n";
+
+    display.innerText += "Price: ";
+
+    display.innerText += "\n";
+
+    display.innerText += "Customer Information";
+
+    display.innerText += "\n";
+
+    display.innerText += "Name: ";
+
+    display.innerText += "\n";
+
+    display.innerText += "Address: ";
+
+    display.innerText += "\n";
+
+    display.innerText += "City And State: ";
+
+    display.innerText += "\n";
+
+    display.innerText += "Zip: ";
+
+    display.innerText += "\n";
+
+    display.innerText += "Phone: ";
 
 });
