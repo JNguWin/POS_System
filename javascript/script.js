@@ -13,7 +13,12 @@ completeBtn.addEventListener('click', function(){
     let phoneText = document.getElementById("Phone");
     let soda = document.getElementById("drink");
     let drinkSize = document.getElementById("drink-size");
+    let transactionNumber = 0;
     
+
+    transactionNumber++;
+
+    display.innerText += "Customer: " + transactionNumber + "\n";
 
     display.innerText += "Pizza Size: ";
     
@@ -47,14 +52,20 @@ completeBtn.addEventListener('click', function(){
 
     display.innerText += "\n";
 
-    display.innerText += "Name: " + nameText.value + "\n";
+    if(nameText.value == "" || addressText.value == "" || cityStateText.value == "" || zipText.value == "" || phoneText.value == ""){
+        alert("Empty field. Fill out all fields.");
+    }
+    else if(nameText != "" && addressText != "" && cityStateText != "" && zipText != "" && phoneText!= ""){
+        display.innerText += "Name: " + nameText.value + "\n";
 
-    display.innerText += "Address: " + addressText.value + "\n";
+        display.innerText += "Address: " + addressText.value + "\n";
 
-    display.innerText += "City And State: " + cityStateText.value + "\n";
+        display.innerText += "City And State: " + cityStateText.value + "\n";
 
-    display.innerText += "Zip: " + zipText.value + "\n";
+        display.innerText += "Zip: " + zipText.value + "\n";
 
-    display.innerText += "Phone: " + phoneText.value + "\n";
+        display.innerText += "Phone: " + phoneText.value + "\n";
+
+    }
 
 });
