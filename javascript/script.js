@@ -1,24 +1,24 @@
 const completeBtn = document.getElementById("complete-transaction");
 const display = document.getElementById("display");
+let transactionNumber = 0;
+
+
+let size = document.getElementsByName("pizza");
+let toppings = document.getElementsByName("toppings");
+let transaction = document.getElementById("transaction");
+let nameText = document.getElementById("Name");
+let addressText = document.getElementById("Address");
+let cityStateText = document.getElementById("CityAndState");
+let zipText = document.getElementById("Zip");
+let phoneText = document.getElementById("Phone");
+let soda = document.getElementById("drink");
+let drinkSize = document.getElementById("drink-size");
 
 completeBtn.addEventListener('click', function(){
 
-    let size = document.getElementsByName("pizza");
-    let toppings = document.getElementsByName("toppings");
-    let transaction = document.getElementById("transaction");
-    let nameText = document.getElementById("Name");
-    let addressText = document.getElementById("Address");
-    let cityStateText = document.getElementById("CityAndState");
-    let zipText = document.getElementById("Zip");
-    let phoneText = document.getElementById("Phone");
-    let soda = document.getElementById("drink");
-    let drinkSize = document.getElementById("drink-size");
-    let transactionNumber = 0;
-    
-    
     transactionNumber++;
 
-    display.innerText += "Customer: " + transactionNumber + "\n";
+    display.innerText = "Customer: " + transactionNumber + "\n";
 
     display.innerText += "Pizza Size: ";
     
