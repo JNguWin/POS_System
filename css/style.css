@@ -5,6 +5,19 @@
     background-color: rgb(243, 44, 44);
     color: yellow;
 }
+nav{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+nav a{
+    text-align: centered;
+    padding: 10px;
+    border: 1px solid black;
+    border-color: silver;
+    border-width: medium;
+    background-color: black;
+    color: silver;
+}
 #container{
     display: grid;
     grid-template-columns: auto auto auto;
