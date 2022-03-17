@@ -6,12 +6,20 @@ completeBtn.addEventListener('click', function(){
     let size = document.getElementsByName("pizza");
     let toppings = document.getElementsByName("toppings");
     let transaction = document.getElementById("transaction");
+    let nameText = document.getElementById("Name");
+    let addressText = document.getElementById("Address");
+    let cityStateText = document.getElementById("CityAndState");
+    let zipText = document.getElementById("Zip");
+    let phoneText = document.getElementById("Phone");
+    let soda = document.getElementById("drink");
+    let drinkSize = document.getElementById("drink-size");
+    
 
-    display.innerText += "Pizza Size: " + " ";
+    display.innerText += "Pizza Size: ";
     
     for(let i = 0; i < size.length; i++){
         if(size[i].checked){
-            display.innerText += size[i].value + "\n";
+            display.innerText += " " + size[i].value + "\n";
         }
     }
     
@@ -27,34 +35,26 @@ completeBtn.addEventListener('click', function(){
 
     display.innerText += "\n";
 
-    display.innerText += "Drink: ";
+    display.innerText += "Drink: " + soda.value;
 
     display.innerText += "\n";
 
-    display.innerText += "Price: ";
+    display.innerText += "Price: " + drinkSize.value + "\n";
 
     display.innerText += "\n";
 
-    display.innerText += "Customer Information";
+    display.innerText += "Customer Information" + "\n";
 
     display.innerText += "\n";
 
-    display.innerText += "Name: ";
+    display.innerText += "Name: " + nameText.value + "\n";
 
-    display.innerText += "\n";
+    display.innerText += "Address: " + addressText.value + "\n";
 
-    display.innerText += "Address: ";
+    display.innerText += "City And State: " + cityStateText.value + "\n";
 
-    display.innerText += "\n";
+    display.innerText += "Zip: " + zipText.value + "\n";
 
-    display.innerText += "City And State: ";
-
-    display.innerText += "\n";
-
-    display.innerText += "Zip: ";
-
-    display.innerText += "\n";
-
-    display.innerText += "Phone: ";
+    display.innerText += "Phone: " + phoneText.value + "\n";
 
 });
