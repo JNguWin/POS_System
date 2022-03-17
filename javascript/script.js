@@ -15,7 +15,7 @@ completeBtn.addEventListener('click', function(){
     let drinkSize = document.getElementById("drink-size");
     let transactionNumber = 0;
     
-
+    
     transactionNumber++;
 
     display.innerText += "Customer: " + transactionNumber + "\n";
